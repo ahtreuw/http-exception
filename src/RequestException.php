@@ -77,7 +77,7 @@ abstract class RequestException extends Exception implements RequestExceptionInt
 
     #[Pure] public function __construct(
         protected RequestInterface $request,
-        null|string                $message,
+        null|string                $message = null,
         null|Throwable             $previous = null
     )
     {
